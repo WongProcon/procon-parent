@@ -399,7 +399,22 @@
         </pluginManagement>
     </build>
 
-
+    <repositories>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/139130-release-VqBNZh/</url>
+            <name>阿里云效私有仓库</name>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/139130-snapshot-h5K85y/</url>
+            <name>阿里云效私有仓库</name>
+        </repository>
+    </repositories>
     <distributionManagement>
         <repository>
             <id>rdc-releases</id>

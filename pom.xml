@@ -12,7 +12,7 @@
 
     <properties>
         <!-- ============ java maven ============ start-->
-        <java.version>1.8</java.version>
+        <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
@@ -144,6 +144,12 @@
                 <scope>import</scope>
             </dependency>
             <!-- SpringCloud 微服务 -->
+            <!-- SpringCloud 2020.x.x工程bootstrap引导配置 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bootstrap</artifactId>
+                <version>3.1.0</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -358,14 +364,6 @@
         </dependencies>
     </dependencyManagement>
     <packaging>pom</packaging>
-
-    <dependencies>
-        <!-- bootstrap 启动器 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
